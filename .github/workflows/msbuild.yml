@@ -41,6 +41,7 @@ jobs:
 
       - name: Build RebootS20
       - name: Build RebootS2
+    
         working-directory: ${{env.GITHUB_WORKSPACE}}
         run: msbuild ${{env.SOLUTION_FILE_PATH}} /p:AboveS20=TRUE /t:Clean,Build /p:Configuration=Release
 
