@@ -39,7 +39,6 @@ jobs:
           if-no-files-found: warn
           retention-days: 90
 
-      - name: Build RebootS20
       - name: Build RebootS2
     
         working-directory: ${{env.GITHUB_WORKSPACE}}
